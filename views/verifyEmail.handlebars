@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body { background-color: #0a1930; padding: 30px; font-family: Arial,
+      Helvetica, sans-serif; } .container { background-color: #eee; padding:
+      10px; border-radius: 3px; } .color-primary { color: #007bff; }
+      .color-danger { color: orangered; } .color-success { color: #28a745; }
+      .color-white { color: #fff; } .color-blue { color: #0a1930; } a {
+      font-size: 1.4rem; text-decoration: none; } .btn { font-size: 1.4rem;
+      font-weight: 400; padding: 6px 8px; margin: 0 5px 0 0; border: 1px solid
+      transparent; border-radius: 3px; cursor: pointer; } .btn-primary { color:
+      #fff; background: #007bff; } .btn-secondary { color: #fff; border: 1px
+      solid #fff; background: transparent; } .btn-danger { color: #fff;
+      background: orangered; } .btn-success { color: #fff; background: #28a745;
+      } .flex-center { display: flex; justify-content: center; align-items:
+      center; } .logo { padding: 5px; background-color: #1f93ff; } .my { margin:
+      2rem 0; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo flex-center">
+        <h2 class="color-white">AUTH:Z</h2>
+      </div>
+      <h2>Hello <span class="color-danger">{{name}}</span></h2>
+      <p>Please use the url below to verify your account</p>
+      <p>This link is valid for 1hrs</p>
+
+      <a href={{link}} class="btn btn-success">Verify Account</a>
+
+      <div class="my">
+        <p>Regards...</p>
+        <p><b class="color-danger">AUTH:Z</b> Team</p>
+      </div>
+    </div>
+  </body>
+</html>
